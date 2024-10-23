@@ -15,4 +15,4 @@ So, the time complexity is: O(2<sup>m</sup> ⋅ n)
 This is <b>exponential time complexity</b>, making it impractical for large values of m (numbers of lines). 
 Besides using a "brute force" algorithm, like the one above, we can also make a more approximative algorithm "greedy" to find a locally-optimal choice that isn't far apart from the most optimal one. 
 
-To do this
+<i> For more information, refer to the pdf file </i>
