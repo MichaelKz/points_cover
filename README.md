@@ -1,18 +1,20 @@
-# Covering Points (hitting objects problem)
+# Points Cover Algorithm 📊
 
+A Python-based algorithmic tool designed to solve geometric and coordinate tracking problems. This project implements custom data processing logic to analyze spatial coordinates and evaluate optimal boundaries or coverage paths.
 
-<b>Description:</b> Imagine having a set of points on a Cartesion coordinate system. You want to cover them with a set of straight lines. The goal is to find the minimum number of lines that pass through the points and cover them all. 
-This problem is called a "hitting objects problem" because it can be understood as trying to "hit" a set of objects (represented by points) with as few shots as possible.
+## 🚀 Current Status: Active Optimization
+The core logic for point ingestion and distance plotting is functional. The project is currently undergoing refactoring to optimize time complexity ($O(N^2)$ to $O(N \log N)$ transitions) and improve error handling for irregular datasets.
 
-<b>Method of Solution:</b> To solve this, we would normally need to find a set of all possible lnes passing through the given points. This process is an example of a more general set covering problem, which is computationally hard to solve in polynomial time. Specifically, we would need to
-1) Generate all subsets of lines that cover the points
-2) Check each subset to see if it covers all of the points
-3) Pick the smallest subset
+## 🛠️ Tech Stack
+* **Language:** Python 3.x
+* **Core Libraries:** Standard Library (Math, Sys)
 
-With given "m" lines and "n" points, the number of possible subsetts of lines is 2<sup>m</sup> (since each line can either be included or excluded from a subset). Then, for each subsett, you would need tto check if it covers all points, which can take O(n) time.
-So, the time complexity is: O(2<sup>m</sup> ⋅ n)
+## 🧠 Core Technical Challenges Addressed
+* **Data Processing Logic:** Designing clean functions to map, filter, and compare multi-dimensional coordinate arrays.
+* **Algorithmic Efficiency:** Structuring loops to prevent unnecessary redundant comparisons across deep datasets.
+* **Edge-Case Management:** Handling null coordinates, overlapping inputs, and single-point boundaries safely without script failure.
 
-This is <b>exponential time complexity</b>, making it impractical for large values of m (numbers of lines). 
-Besides using a "brute force" algorithm, like the one above, we can also make a more approximative algorithm "greedy" to find a locally-optimal choice that isn't far apart from the most optimal one. 
-
-<i> For more information, refer to the pdf file </i>
+## 🗺️ Next Steps & Feature Requests
+* [ ] Refactor main iteration loops to utilize highly-optimized math libraries (like NumPy).
+* [ ] Implement a lightweight CLI (Command Line Interface) for custom file input processing.
+* [ ] Generate visual plotting models using Matplotlib to demonstrate algorithmic accuracy.
