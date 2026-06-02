@@ -5,7 +5,7 @@ A Python-based algorithmic tool designed to solve geometric and coordinate track
 ## Current Status: Under Development
 The core logic for point ingestion and distance plotting is functional. The project is currently undergoing refactoring to optimize time complexity ($O(N^2)$ to $O(N \log N)$ transitions) and improve error handling for irregular datasets.
 
-## 🛠️ Tech Stack
+## Tech Stack
 * **Language:** Python 3.x
 * **Core Libraries:** Standard Library (Math, Sys), itertools, argparse
 
